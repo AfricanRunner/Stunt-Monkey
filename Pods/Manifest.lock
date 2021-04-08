@@ -1,0 +1,70 @@
+PODS:
+  - AWSAuthCore (2.12.7):
+    - AWSCore (= 2.12.7)
+  - AWSAuthUI (2.12.7):
+    - AWSAuthCore (= 2.12.7)
+    - AWSCore (= 2.12.7)
+  - AWSCognitoIdentityProvider (2.12.7):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.12.7)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.12.7)
+  - AWSGoogleSignIn (2.12.7):
+    - AWSAuthCore (= 2.12.7)
+  - AWSMobileClient (2.12.7):
+    - AWSAuthCore (= 2.12.7)
+    - AWSCognitoIdentityProvider (= 2.12.7)
+  - AWSUserPoolsSignIn (2.12.7):
+    - AWSAuthCore (= 2.12.7)
+    - AWSCognitoIdentityProvider (= 2.12.7)
+  - GoogleSignIn (4.4.0):
+    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
+    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.3.1):
+    - GoogleToolboxForMac/Defines (= 2.3.1)
+  - GoogleToolboxForMac/Defines (2.3.1)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.3.1)":
+    - GoogleToolboxForMac/DebugUtils (= 2.3.1)
+    - GoogleToolboxForMac/Defines (= 2.3.1)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.3.1)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.3.1)"
+  - GTMSessionFetcher/Core (1.5.0)
+
+DEPENDENCIES:
+  - AWSAuthUI (~> 2.12.1)
+  - AWSGoogleSignIn (~> 2.12.1)
+  - AWSMobileClient (~> 2.12.1)
+  - AWSUserPoolsSignIn (~> 2.12.1)
+  - GoogleSignIn (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - AWSAuthCore
+    - AWSAuthUI
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSGoogleSignIn
+    - AWSMobileClient
+    - AWSUserPoolsSignIn
+    - GoogleSignIn
+    - GoogleToolboxForMac
+    - GTMSessionFetcher
+
+SPEC CHECKSUMS:
+  AWSAuthCore: 288cb737a35ff031fbf42edaa8d0062328791d4e
+  AWSAuthUI: 464fbab1841f8878e6370ec76581f9bea67e6252
+  AWSCognitoIdentityProvider: 4998bdbfbafe5038dae0237a598580e102e7b6b5
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: 2f0f88ae94a63a198274d683c7d0e18709d7090b
+  AWSGoogleSignIn: 120f561aeedac2b01c48b498b2d2f035dc09da9a
+  AWSMobileClient: bf1fb0868f9187141ca7b69220383c14878c0a29
+  AWSUserPoolsSignIn: fffc46e512e326783585e53639e58c355aae320f
+  GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
+  GoogleToolboxForMac: 471e0c05d39506e50e6398f46fa9a12ae0efeff9
+  GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
+
+PODFILE CHECKSUM: 8e8eb7ab81ecb2e9179fa25555a20fc25620f1f9
+
+COCOAPODS: 1.10.1
