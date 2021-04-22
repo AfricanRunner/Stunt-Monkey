@@ -2,16 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>MonkeyFace.PNG</string>
+	</array>
 	<key>CFBundleURLTypes</key>
-		<array>
-    		<dict>
-        		<key>CFBundleURLSchemes</key>
-        		<array>
-            		<string>com.googleusercontent.apps.688426340920-3r5kvvbav82htp8jtq7umai7bk63h7jc</string>
-            		<string>StuntMonkey</string>
-        		</array>
-    		</dict>
-		</array>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.688426340920-3r5kvvbav82htp8jtq7umai7bk63h7jc</string>
+				<string>StuntMonkey</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

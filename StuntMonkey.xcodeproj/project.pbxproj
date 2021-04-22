@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11543C2366C74EEEA66CAE18 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 036D477CAB2D4806A9F9FFE5 /* awsconfiguration.json */; };
-		54A43CB35B774DD38327442A /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = CC00F943ACB74D00A3995EC0 /* amplifyconfiguration.json */; };
+		AB0E3CB5262C951E0065E2E5 /* RaspberryPi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E3CB4262C951E0065E2E5 /* RaspberryPi.swift */; };
+		AB2F83D5262B39590035BFA8 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2F83D4262B39590035BFA8 /* DashboardView.swift */; };
+		AB2FA5A226289979007E846C /* ThisUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2FA5A126289979007E846C /* ThisUser.swift */; };
+		AB2FA5A526289A7F007E846C /* ThisRide.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2FA5A426289A7F007E846C /* ThisRide.swift */; };
+		AB2FA5A826289BDC007E846C /* ThisBestStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2FA5A726289BDC007E846C /* ThisBestStats.swift */; };
+		AB2FA5AB26289D40007E846C /* ThisPitchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2FA5AA26289D40007E846C /* ThisPitchData.swift */; };
+		AB2FA5AE26289EC2007E846C /* ThisRollData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2FA5AD26289EC2007E846C /* ThisRollData.swift */; };
+		AB2FA5B126289F76007E846C /* AWSAppSyncDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2FA5B026289F76007E846C /* AWSAppSyncDataStore.swift */; };
+		AB4D5514262DCD090031E715 /* DialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D5513262DCD090031E715 /* DialView.swift */; };
 		AB8868EC261F95C10025334B /* SSHConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8868EB261F95C10025334B /* SSHConnection.swift */; };
+		AB9FA194262F3DE100E3323D /* MonkeyFace.PNG in Resources */ = {isa = PBXBuildFile; fileRef = AB9FA193262F3DE000E3323D /* MonkeyFace.PNG */; };
 		ABC0A37426121CE000E571C8 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC0A37226121CE000E571C8 /* amplifyconfiguration.json */; };
 		ABC0A37526121CE000E571C8 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = ABC0A37326121CE000E571C8 /* awsconfiguration.json */; };
 		ABC25CF426114BA50001E048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC25CF326114BA50001E048 /* AppDelegate.swift */; };
@@ -18,6 +26,7 @@
 		ABC25CFA26114BA80001E048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC25CF926114BA80001E048 /* Assets.xcassets */; };
 		ABC25CFD26114BA80001E048 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC25CFC26114BA80001E048 /* Preview Assets.xcassets */; };
 		ABC25D0026114BA80001E048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC25CFE26114BA80001E048 /* LaunchScreen.storyboard */; };
+		ABC6CF49262880CA0044CE74 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC6CF48262880CA0044CE74 /* API.swift */; };
 		ABD5EC7B2613562A006D33F6 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD5EC7A2613562A006D33F6 /* AppSettings.swift */; };
 		ABD5EC7E261361FF006D33F6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD5EC7D261361FF006D33F6 /* LoginView.swift */; };
 		ABD5EC81261365B8006D33F6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD5EC80261365B8006D33F6 /* SignUpView.swift */; };
@@ -26,15 +35,25 @@
 		ABD5EC9226137245006D33F6 /* RideData.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD5EC9126137245006D33F6 /* RideData.swift */; };
 		ABD5EC9526137258006D33F6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD5EC9426137258006D33F6 /* MainView.swift */; };
 		ABFF917326121DDD0092A4F6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFF917226121DDD0092A4F6 /* SignInViewController.swift */; };
-		E5DEF76FDEA1743FE23F6384 /* Pods_StuntMonkey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697F655D5E990B8C3099BBDA /* Pods_StuntMonkey.framework */; };
+		D416F934714F3E6056DB037E /* Pods_StuntMonkey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77646EDCDAC1AF3E13CCE1D /* Pods_StuntMonkey.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0275219D0254174271BDEB0A /* Pods-StuntMonkey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuntMonkey.debug.xcconfig"; path = "Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey.debug.xcconfig"; sourceTree = "<group>"; };
 		036D477CAB2D4806A9F9FFE5 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
-		697F655D5E990B8C3099BBDA /* Pods_StuntMonkey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StuntMonkey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AE1A399CD8D4FDA8E5E94FD /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/amplifyDatasource/schema.graphql; sourceTree = "<group>"; };
 		721FA39C9F5A44818D804E2C /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
-		A9D7F5A893CF21DF2C7D1223 /* Pods-StuntMonkey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuntMonkey.debug.xcconfig"; path = "Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey.debug.xcconfig"; sourceTree = "<group>"; };
+		AB0E3CB4262C951E0065E2E5 /* RaspberryPi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspberryPi.swift; sourceTree = "<group>"; };
+		AB2F83D4262B39590035BFA8 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		AB2FA5A126289979007E846C /* ThisUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisUser.swift; sourceTree = "<group>"; };
+		AB2FA5A426289A7F007E846C /* ThisRide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisRide.swift; sourceTree = "<group>"; };
+		AB2FA5A726289BDC007E846C /* ThisBestStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisBestStats.swift; sourceTree = "<group>"; };
+		AB2FA5AA26289D40007E846C /* ThisPitchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisPitchData.swift; sourceTree = "<group>"; };
+		AB2FA5AD26289EC2007E846C /* ThisRollData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisRollData.swift; sourceTree = "<group>"; };
+		AB2FA5B026289F76007E846C /* AWSAppSyncDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSAppSyncDataStore.swift; sourceTree = "<group>"; };
+		AB4D5513262DCD090031E715 /* DialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialView.swift; sourceTree = "<group>"; };
 		AB8868EB261F95C10025334B /* SSHConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSHConnection.swift; sourceTree = "<group>"; };
+		AB9FA193262F3DE000E3323D /* MonkeyFace.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MonkeyFace.PNG; sourceTree = "<group>"; };
 		ABC0A37226121CE000E571C8 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
 		ABC0A37326121CE000E571C8 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 		ABC25CF026114BA50001E048 /* StuntMonkey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StuntMonkey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +64,7 @@
 		ABC25CFC26114BA80001E048 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ABC25CFF26114BA80001E048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABC25D0126114BA80001E048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC6CF48262880CA0044CE74 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = SOURCE_ROOT; };
 		ABD5EC7A2613562A006D33F6 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		ABD5EC7D261361FF006D33F6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		ABD5EC80261365B8006D33F6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -53,7 +73,8 @@
 		ABD5EC9126137245006D33F6 /* RideData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideData.swift; sourceTree = "<group>"; };
 		ABD5EC9426137258006D33F6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		ABFF917226121DDD0092A4F6 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		C253D354A5212AEFFAE2D22B /* Pods-StuntMonkey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuntMonkey.release.xcconfig"; path = "Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey.release.xcconfig"; sourceTree = "<group>"; };
+		AEBCF5B08B416FC8B3E51347 /* Pods-StuntMonkey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StuntMonkey.release.xcconfig"; path = "Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey.release.xcconfig"; sourceTree = "<group>"; };
+		B77646EDCDAC1AF3E13CCE1D /* Pods_StuntMonkey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StuntMonkey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC00F943ACB74D00A3995EC0 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5DEF76FDEA1743FE23F6384 /* Pods_StuntMonkey.framework in Frameworks */,
+				D416F934714F3E6056DB037E /* Pods_StuntMonkey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +93,8 @@
 		24DBF1187D2CA75A7F98D59F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A9D7F5A893CF21DF2C7D1223 /* Pods-StuntMonkey.debug.xcconfig */,
-				C253D354A5212AEFFAE2D22B /* Pods-StuntMonkey.release.xcconfig */,
+				0275219D0254174271BDEB0A /* Pods-StuntMonkey.debug.xcconfig */,
+				AEBCF5B08B416FC8B3E51347 /* Pods-StuntMonkey.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -84,17 +105,39 @@
 				721FA39C9F5A44818D804E2C /* amplifytools.xcconfig */,
 				CC00F943ACB74D00A3995EC0 /* amplifyconfiguration.json */,
 				036D477CAB2D4806A9F9FFE5 /* awsconfiguration.json */,
+				6AE1A399CD8D4FDA8E5E94FD /* schema.graphql */,
 			);
 			name = AmplifyConfig;
 			path = .;
 			sourceTree = "<group>";
 		};
-		779FDCAC925EC48509914B85 /* Frameworks */ = {
+		9CE2716C1942B672B2B13C3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				697F655D5E990B8C3099BBDA /* Pods_StuntMonkey.framework */,
+				B77646EDCDAC1AF3E13CCE1D /* Pods_StuntMonkey.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB0E3CB1262C950A0065E2E5 /* Raspberry Pi */ = {
+			isa = PBXGroup;
+			children = (
+				AB0E3CB4262C951E0065E2E5 /* RaspberryPi.swift */,
+			);
+			path = "Raspberry Pi";
+			sourceTree = "<group>";
+		};
+		AB2FA59B26289952007E846C /* AWS Database */ = {
+			isa = PBXGroup;
+			children = (
+				AB2FA5A126289979007E846C /* ThisUser.swift */,
+				AB2FA5A426289A7F007E846C /* ThisRide.swift */,
+				AB2FA5A726289BDC007E846C /* ThisBestStats.swift */,
+				AB2FA5AA26289D40007E846C /* ThisPitchData.swift */,
+				AB2FA5AD26289EC2007E846C /* ThisRollData.swift */,
+				AB2FA5B026289F76007E846C /* AWSAppSyncDataStore.swift */,
+			);
+			path = "AWS Database";
 			sourceTree = "<group>";
 		};
 		ABC25CE726114BA50001E048 = {
@@ -103,8 +146,8 @@
 				6E586DD1302C450183E95C26 /* AmplifyConfig */,
 				ABC25CF226114BA50001E048 /* StuntMonkey */,
 				ABC25CF126114BA50001E048 /* Products */,
-				779FDCAC925EC48509914B85 /* Frameworks */,
 				24DBF1187D2CA75A7F98D59F /* Pods */,
+				9CE2716C1942B672B2B13C3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,10 +171,12 @@
 				ABD5EC80261365B8006D33F6 /* SignUpView.swift */,
 				ABFF917226121DDD0092A4F6 /* SignInViewController.swift */,
 				ABC25CF926114BA80001E048 /* Assets.xcassets */,
+				ABC6CF48262880CA0044CE74 /* API.swift */,
 				ABC0A37226121CE000E571C8 /* amplifyconfiguration.json */,
 				ABC0A37326121CE000E571C8 /* awsconfiguration.json */,
 				ABC25CFE26114BA80001E048 /* LaunchScreen.storyboard */,
 				ABC25D0126114BA80001E048 /* Info.plist */,
+				AB9FA193262F3DE000E3323D /* MonkeyFace.PNG */,
 				ABC25CFB26114BA80001E048 /* Preview Content */,
 				ABD5EC7A2613562A006D33F6 /* AppSettings.swift */,
 			);
@@ -152,6 +197,8 @@
 				ABD5EC8C2613723C006D33F6 /* RideDataListView.swift */,
 				ABD5EC8D2613723C006D33F6 /* RideDataView.swift */,
 				ABD5EC9426137258006D33F6 /* MainView.swift */,
+				AB2F83D4262B39590035BFA8 /* DashboardView.swift */,
+				AB4D5513262DCD090031E715 /* DialView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +206,8 @@
 		ABD5EC8B2613722D006D33F6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AB0E3CB1262C950A0065E2E5 /* Raspberry Pi */,
+				AB2FA59B26289952007E846C /* AWS Database */,
 				ABD5EC9126137245006D33F6 /* RideData.swift */,
 				AB8868EB261F95C10025334B /* SSHConnection.swift */,
 			);
@@ -172,18 +221,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABC25D0426114BA90001E048 /* Build configuration list for PBXNativeTarget "StuntMonkey" */;
 			buildPhases = (
-				F2B133F01A3FB774CD0FA4DA /* [CP] Check Pods Manifest.lock */,
+				44D6F122CF6E4E9237D38C63 /* [CP] Check Pods Manifest.lock */,
 				ABC25CEC26114BA50001E048 /* Sources */,
 				ABC25CED26114BA50001E048 /* Frameworks */,
 				ABC25CEE26114BA50001E048 /* Resources */,
-				B7C9F8B02F67CC5076849D08 /* [CP] Embed Pods Frameworks */,
-				CE30D64985712094E5C6193E /* [CP] Copy Pods Resources */,
+				837103145C32A9CFC52DFA2D /* [CP] Embed Pods Frameworks */,
+				4BD01C8864C4D8887686E84C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = StuntMonkey;
+			packageProductDependencies = (
+			);
 			productName = StuntMonkey;
 			productReference = ABC25CF026114BA50001E048 /* StuntMonkey.app */;
 			productType = "com.apple.product-type.application";
@@ -211,6 +262,8 @@
 				Base,
 			);
 			mainGroup = ABC25CE726114BA50001E048;
+			packageReferences = (
+			);
 			productRefGroup = ABC25CF126114BA50001E048 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -230,49 +283,14 @@
 				ABC0A37426121CE000E571C8 /* amplifyconfiguration.json in Resources */,
 				ABC25CFD26114BA80001E048 /* Preview Assets.xcassets in Resources */,
 				ABC25CFA26114BA80001E048 /* Assets.xcassets in Resources */,
-				54A43CB35B774DD38327442A /* amplifyconfiguration.json in Resources */,
-				11543C2366C74EEEA66CAE18 /* awsconfiguration.json in Resources */,
+				AB9FA194262F3DE100E3323D /* MonkeyFace.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B7C9F8B02F67CC5076849D08 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE30D64985712094E5C6193E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F2B133F01A3FB774CD0FA4DA /* [CP] Check Pods Manifest.lock */ = {
+		44D6F122CF6E4E9237D38C63 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -294,6 +312,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4BD01C8864C4D8887686E84C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837103145C32A9CFC52DFA2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StuntMonkey/Pods-StuntMonkey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -304,13 +356,23 @@
 				ABD5EC7E261361FF006D33F6 /* LoginView.swift in Sources */,
 				ABFF917326121DDD0092A4F6 /* SignInViewController.swift in Sources */,
 				ABC25CF426114BA50001E048 /* AppDelegate.swift in Sources */,
+				AB2FA5A826289BDC007E846C /* ThisBestStats.swift in Sources */,
 				ABD5EC81261365B8006D33F6 /* SignUpView.swift in Sources */,
+				AB2FA5A226289979007E846C /* ThisUser.swift in Sources */,
 				AB8868EC261F95C10025334B /* SSHConnection.swift in Sources */,
 				ABC25CF626114BA50001E048 /* SceneDelegate.swift in Sources */,
+				AB2FA5AB26289D40007E846C /* ThisPitchData.swift in Sources */,
 				ABD5EC8F2613723C006D33F6 /* RideDataView.swift in Sources */,
+				AB4D5514262DCD090031E715 /* DialView.swift in Sources */,
 				ABD5EC7B2613562A006D33F6 /* AppSettings.swift in Sources */,
+				ABC6CF49262880CA0044CE74 /* API.swift in Sources */,
 				ABD5EC9526137258006D33F6 /* MainView.swift in Sources */,
 				ABD5EC9226137245006D33F6 /* RideData.swift in Sources */,
+				AB2FA5AE26289EC2007E846C /* ThisRollData.swift in Sources */,
+				AB2FA5B126289F76007E846C /* AWSAppSyncDataStore.swift in Sources */,
+				AB2FA5A526289A7F007E846C /* ThisRide.swift in Sources */,
+				AB2F83D5262B39590035BFA8 /* DashboardView.swift in Sources */,
+				AB0E3CB5262C951E0065E2E5 /* RaspberryPi.swift in Sources */,
 				ABD5EC8E2613723C006D33F6 /* RideDataListView.swift in Sources */,
 				ABC25CF826114BA50001E048 /* ContentView.swift in Sources */,
 			);
@@ -448,7 +510,7 @@
 		};
 		ABC25D0526114BA90001E048 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9D7F5A893CF21DF2C7D1223 /* Pods-StuntMonkey.debug.xcconfig */;
+			baseConfigurationReference = 0275219D0254174271BDEB0A /* Pods-StuntMonkey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -470,7 +532,7 @@
 		};
 		ABC25D0626114BA90001E048 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C253D354A5212AEFFAE2D22B /* Pods-StuntMonkey.release.xcconfig */;
+			baseConfigurationReference = AEBCF5B08B416FC8B3E51347 /* Pods-StuntMonkey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

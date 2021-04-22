@@ -8,29 +8,27 @@
 import SwiftUI
 
 struct RideDataListView: View {
-    var rideData: [RideData]
+    @EnvironmentObject var dataStore: AWSAppSyncDataStore
+    @ObservedObject var settings: AppSettings
     
     var body: some View {
-        Group {
-            List(rideData) { data in
-                NavigationLink( destination: RideDataView(rideData: data)) {
-                    RideDataRow(rideData: data)
+        NavigationView {
+            List(dataStore.rides.filter {$0.userEmail == settings.username}, id: \.rideId) { ride in
+                NavigationLink( destination: RideDataView(rideData: dataStore.getRideData(rideId: ride.rideId))) {
+                    RideDataRow(rideData: ride)
                 }
-            }
-        }.navigationBarTitle(Text("Ride Data"))
+            }.navigationBarTitle("Ride History", displayMode: .inline)
+        }
     }
 }
 
 struct RideDataRow: View {
-    var rideData: RideData
+    @EnvironmentObject var dataStore: AWSAppSyncDataStore
+    
+    var rideData: ThisRide
     
     var body: some View {
-        Text("\(rideData.formattedDate)")
-    }
-}
-
-struct RideDataListView_Previews: PreviewProvider {
-    static var previews: some View {
-        RideDataListView(rideData: tempRideData)
+        let data = dataStore.getRideData(rideId: rideData.rideId)
+        Text("\(data.formattedDate) at \(data.formattedTime)")
     }
 }

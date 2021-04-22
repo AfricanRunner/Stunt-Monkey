@@ -9,28 +9,37 @@ import SwiftUI
 import AWSMobileClient
 
 struct MainView: View {
-    @ObservedObject var settings = AppSettings()
+    @ObservedObject var settings: AppSettings
+    @EnvironmentObject var dataStore: AWSAppSyncDataStore
+    
+    
     let signInVC: SignInViewController
     
     var body: some View {
         TabView {
-            Text("Live!")
+            DashboardView()
                 .tabItem { Image(systemName: "gauge")
                     Text("Dashboard")
                 }
-            RideDataListView(rideData: tempRideData)
+            RideDataListView(settings: settings).navigationTitle("Ride Data")
                 .tabItem { Image(systemName: "archivebox")
                     Text("History")
                 }
-            Text("Social!")
-                .tabItem { Image(systemName: "person.2")
-                    Text("Social")
-                }
-            Button("Sign Out!") {
+//            Text("Social!")
+//                .tabItem { Image(systemName: "person.2")
+//                    Text("Social")
+//                }
+            Button(action: {
                 AWSMobileClient.default().signOut()
                 self.settings.username = ""
-            }.tabItem { Image(systemName: "ellipsis")
+            }) {
+                SMButton(text: "Sign Out")
+            }.tabItem {
+                //HStack{
+                Image(systemName: "ellipsis")
                 Text("Other")
+                    //Text("Other")
+//                }
             }
         }
     }

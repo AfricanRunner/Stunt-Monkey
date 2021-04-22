@@ -11,6 +11,8 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    
+    let dataStore = AWSAppSyncDataStore()
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -20,7 +22,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         //let contentView = ContentView()
-        let contentView = LoginView()
+        
+//        dataStore.addUser(create: ThisUser(email: "totallyrandomemail@email.com", name: "John Doe")) { user in
+//            print(user ?? "Wrogn")
+//        }
+//        print("added John doe")
+        
+//        dataStore.addRide(create: ThisRide(rideId: "0", rideLength: "12", rideDate: "1234", userEmail: "dupreezdaniel8@gmail.com"))
+        print("Printing rides")
+        print(dataStore.rides)
+        
+        let settings = AppSettings()
+        let signInVC = SignInViewController(settings: settings)
+        
+        let contentView = MotherView(signInVC: signInVC).environmentObject(dataStore).environmentObject(ViewRouter()).environmentObject(settings)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

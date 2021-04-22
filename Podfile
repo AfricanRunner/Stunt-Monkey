@@ -5,7 +5,17 @@ target 'StuntMonkey' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  inhibit_all_warnings!
+
   # Pods for StuntMonkey
+  #
+  #pod 'SwiftSH', '~> 1.0.0'
+  #pod 'libssh2'
+  pod 'Libssh2-iOS'
+ 
+ pod 'AWSAppSync'
+ # pod 'amplify-tools'
+ pod 'Amplify'
   
   pod 'AWSMobileClient', '~> 2.12.1'      # Required dependency
 pod 'AWSAuthUI', '~> 2.12.1'            # Optional dependency required to use drop-in UI

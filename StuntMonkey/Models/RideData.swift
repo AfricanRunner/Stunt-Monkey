@@ -7,38 +7,63 @@
 
 import Foundation
 
-let tempRideData = [RideData(id: 0, date: Date(), rideTime: 15, pitchData: [], rollData: []), RideData(id: 1, date: Date(timeIntervalSince1970: 1000000000), rideTime: 27, pitchData: [], rollData: [])]
-
 struct RideData: Identifiable, Codable {
-    
-    var id: Int
-    var date: Date
+    var id: String
+    var date: String
     var rideTime: Int
     var pitchData: [Double]
     var rollData: [Double]
     
-    static let smallestWheelieAngle: Double = 45
-    static let timePerMeasurement: Double = 1
+    static func getFromJSON(_ json: String) -> RideData {
+        let jsonData = json.data(using: .utf8)!
+        let rideData = try! JSONDecoder().decode(RideData.self, from: jsonData)
+        return rideData
+    }
     
-    var maxWheelieTime: Double {
-        var maxTime = 0
-        var currentTime = 0
-        for pitch in pitchData {
-            if pitch >= RideData.smallestWheelieAngle {
-                currentTime += 1
-            } else {
-                if currentTime > maxTime {
-                    maxTime = currentTime
-                }
-                currentTime = 0
-            }
-        }
-        return Double(maxTime) * RideData.timePerMeasurement
+    func getFormattedDate(format: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        let pureDate = dateFormatter.date(from: date)!
+        let dateFormatter2 = DateFormatter()
+        dateFormatter2.dateFormat = format
+        return dateFormatter2.string(from: pureDate)
     }
     
     var formattedDate: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy"
-        return dateFormatter.string(from: date)
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        if let pureDate = formatter.date(from: String(date.split(separator: ".")[0])) {
+            let outFormatter = DateFormatter()
+            outFormatter.dateStyle = .medium
+    //        outFormatter.timeStyle = .medium
+            return outFormatter.string(from: pureDate)
+        } else {
+            print("Failed to format date")
+            print(date)
+            return date
+        }
+    }
+    
+    var formattedTime: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        if let pureDate = formatter.date(from: String(date.split(separator: ".")[0])) {
+            let outFormatter = DateFormatter()
+//            outFormatter.dateStyle = .medium
+            outFormatter.timeStyle = .medium
+            return outFormatter.string(from: pureDate)
+        } else {
+            print("Failed to format date")
+            print(date)
+            return date
+        }
+    }
+    
+    var formattedLength: String {
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.day, .hour, .minute, .second]
+        formatter.unitsStyle = .abbreviated
+        formatter.maximumUnitCount = 1
+        return formatter.string(from: TimeInterval(Double(rideTime) / 3.0))!
     }
 }
